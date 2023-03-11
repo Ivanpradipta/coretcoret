@@ -1,48 +1,21 @@
-## (13) Inroduction ReactJS :open_book: 	
+## (13)Introduction React
 
-### 1. Apa itu React JS :question:
-ReactJS adalah library JavaScript yang digunakan untuk membangun User Interface (UI) suatu halaman pada website ataupun mobile. ReactJS merupakan open source yang dikelola oleh Facebook. Pada arsitekture MVC atau Model, View, and Controller, ReactJS hanya mengambil peran pada bagian View saja. Seperti jenisnya, ReactJS sebagai library Javascript memiliki fungsi untuk membuat proses pengkodean Javascript menjadi lebih efisien dan singkat. Programmer hanya perlu membuat suatu komponen dan komponen tersebut dapat digunakan kapan saja dan berapa kalipun sesuai konteks dari komponen tersebut. Sehingga hal inilah yang dapat mempersingkat penulisan kode.
+### 1. ReactJS
+ReactJS adalah library JavaScript yang digunakan untuk membangun tampilan pada website ataupun mobile. React sendiri memiliki sejarah yang lumayan panjang, awalnya rReact ini diciptakan oleh Jordan Walke pada tahun 2011 karena pada saat itu Facebook mengalami masalah untuk pengembangan aplikasi mereka maka dari itu diciptakanlah ReactJs ini sebagai suatu pemecahan masalah
 
-#### Apa yang menjadi kelebihan dari ReactJS :interrobang:
-   - **Declarative**
-      Artinya penulisan kode dirancang lebih dapat dibaca berdasarkan aliran logika dan lebih mudah didebug.
-   - **Component-Based**
-      Artinya pada penulisan code Javascript dapat dilakukan dengan suatu bagian code yang lebih kecil / komponen dan nantinya komponen tersebut memiliki peran masing-masing, komponen itu dapat di panggil untuk dirender untuk tampil pada web kapan saja dan dapat dipanggil berapa kalipun sesuai kebutuhan.
-   - **Larn Once, Write Anywhere**
-      Artinya ReactJS juga dapat merender di server Website menggunakan Node dan menjalankan aplikasi mobbile menggunakan React Native.
+### 2. Kelebihan ReactJS dan VDOM
+- Declarative adalah salah satu cara pendekatan yang berfokus pada apa yang ingin dicapai oleh si penulis code 
+- Component-Based adalah ketika kita membuat suatu aplikasi yang kompleks kita bisa membreakdown menjadi bagian-bagian yang kecil yang mempermudah kita untuk membuat code  
+- Learn Once, Write Anywhere maksudnya adalah ketika kita sudah paham React dan bisa membuat aplikasi membuat React kita bisa mudah dalam membuat aplikasi native hanya perlu penyesuaian sedikit
+#### VDOM
+VDOM adalah representasi dari UI yang berbentuk Javascript object yang disimpan di memory. pada ReactJS sendiri penyimpanan dan sinkronisasi virtual DOM terhadap DOM dilakukan oleh rendering React DOM. cara React melakukan render kekita ada suatu state pada komponen yang beruah adalah Compute Diff jadi ada dimana saja perubhaanya setelah didapat maka akan dilakukan re-render. 
 
-### 2. Virtual DOM pada ReactJS
-Virtual DOM berguna untuk melihat bagian dari DOM asli. Ketika akan mengupdate DOM menggunakan JSX (Javascript XML), ReactJS akan membuat salinan DOM aslinya yang disebut dengan Virtual DOM. Jadi, ketika ada bagian pada DOM yang perlu diubah, maka ReactJS akan mengubah bagian tersebut saja dan tidak akan me-refresh tampilan.
-
-### 3. Membuat Project React :open_file_folder:
-Ada beberapa hatoolsl yang perlu disiapkan untuk memulai project React, yaitu:
-   - Web Browser, seperti Chrome atau Edge
-   - Code Editor, seperti VSCode atau Sublime Text.
-   - Command Line, seperti CMD, Git, atau Powershell.
-   - Menginstall NodeJS (Versi LTS direkomendasikan) [Link](https://nodejs.org/en/)
-
-#### Membuat Aplikasi/Project dengan React
-   - **CRA (create-react-app)**
-      Caranya dengan memposisikan Command Line pada folder yang ingin digunakan sebagai   project React. Lalu masukan command `cra` seperti berikut:
-   ```bash
-      // template
-      npx create-react-app [project-name]
-
-      // example
-      npx create-react-app my-app
+### 3. Cara Pembuatan Project pada React
+- Pertama kita bisa menggunakan CRA untuk membuat Project pada React di dalam cmd dengan menuliskan 
+```bash
+      npx create-react-app nama-project
    ```
-
-   - **Vite**
-      Caranya dengan memposisikan Command Line pada folder yang ingin digunakan sebagai project React. Lalu masukan command `Vite` seperti berikut:
-
-   ```bash
-      // jika menggunakan npm
-      npm create vite@latest my-react-app -- --template react
-
-      // jika menggunakan yarn
-      yarn create vite my-react-app --template react
+- untuk melakukan run pada browser kita bisa menggunakan npm
+```bash
+      npm start
    ```
-
-### Referensi
-- [reactjs.org](https://reactjs.org/)
-- [Vite](https://vitejs.dev/guide/)
